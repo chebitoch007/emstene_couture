@@ -1,3 +1,2 @@
 User-agent: *
-Allow: /
-Sitemap: https://emstene-couture.vercel.app/sitemap.xml
+Disallow: /

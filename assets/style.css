@@ -115,3 +115,5 @@ textarea{min-height:120px;resize:vertical}
 .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:48px}
 .foot{display:flex;flex-wrap:wrap;gap:8px 22px;justify-content:center;margin-bottom:10px}
 .foot a{padding:10px 4px;display:inline-block}
+
+.sample{background:var(--ink);color:var(--bg);text-align:center;padding:10px 16px;font-size:.92rem}
