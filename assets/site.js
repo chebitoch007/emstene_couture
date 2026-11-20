@@ -1,5 +1,5 @@
 (()=>{
-const WA="254738447566";
+const WA="254721395434";
 const $=(s,r=document)=>r.querySelector(s);
 // Gallery: renders data/styles.json (add "image":"/images/file.jpg" to show a real photo)
 const g=$("#gallery");

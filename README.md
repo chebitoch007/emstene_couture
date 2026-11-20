@@ -12,7 +12,7 @@ Static multi-page site for Vercel (no build step) plus one serverless function f
 
 ## Everyday edits
 - **Add real photos:** upload to `images/`, then set `"image": "/images/your-photo.jpg"` on an item in `data/styles.json`. Use portrait photos (4:5), under 300 KB each.
-- **Change phone or WhatsApp number:** search for `254738447566` and `0738 447 566` across files and replace. Run `npm test` after.
+- **Change phone or WhatsApp number:** search for `254721395434` and `0721 395 434` across files and replace. Run `npm test` after.
 - **After you get a domain:** replace `https://emstene-couture.vercel.app` in all `.html` files and `sitemap.xml`/`robots.txt`.
 
 ## Order requests by email
