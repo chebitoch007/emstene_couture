@@ -3,15 +3,15 @@
 Static multi-page site for Vercel (no build step) plus one serverless function for order requests.
 
 ## Structure
-- `index.html`, `services.html`, `about.html`, `contact.html`, `404.html`
+- `index.html`, `styles.html`, `services.html`, `about.html`, `contact.html`, `404.html`
 - `assets/style.css`, `assets/site.js` shared styling and behaviour
+- `data/styles.json` the styles gallery (edit this, no code needed)
 - `images/` put photos here
 - `api/inquiry.js` emails the owner when the contact form is sent
-- `vercel.json`, `robots.txt`
+- `vercel.json`, `sitemap.xml`, `robots.txt`
 
 ## Everyday edits
-- **Sample status:** pages are noindex and carry a "sample" banner. Before going live, remove the banner, the noindex meta tags, the `X-Robots-Tag` header in `vercel.json`, and restore `robots.txt` and a sitemap.
-- **Add content only the owner confirms:** services, past clients and photos.
+- **Add real photos:** upload to `images/`, then set `"image": "/images/your-photo.jpg"` on an item in `data/styles.json`. Use portrait photos (4:5), under 300 KB each.
 - **Change phone or WhatsApp number:** search for `254721395434` and `0721 395 434` across files and replace. Run `npm test` after.
 - **After you get a domain:** replace `https://emstene-couture.vercel.app` in all `.html` files and `sitemap.xml`/`robots.txt`.
 
@@ -26,7 +26,7 @@ Without these, the form opens WhatsApp with the request pre-written, so no order
 ## Deploy checklist
 - [ ] `npm test` passes
 - [ ] Phone number and services confirmed by the owner
-- [ ] Services, past clients and photos confirmed by the owner
+- [ ] Real photos added to `data/styles.json`
 - [ ] Environment variables set, then submit a test request on `/contact` and confirm the email arrives
 - [ ] Check every page on a phone (menu, WhatsApp bar, form)
 - [ ] Domain set and URLs updated in canonical tags and sitemap
