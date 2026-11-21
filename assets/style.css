@@ -9,7 +9,7 @@ a{color:inherit}a:focus-visible,button:focus-visible,input:focus-visible,select:
 .sample{background:var(--ink);color:#fff;text-align:center;padding:10px 16px;font-size:.92rem}
 .skip{position:absolute;left:-999px;top:8px;background:var(--ink);color:#fff;padding:10px 16px;z-index:10}.skip:focus{left:8px}
 header{display:flex;justify-content:space-between;align-items:center;max-width:1040px;margin:0 auto;padding:10px 24px}
-.brand{display:inline-flex;min-width:44px;min-height:44px}.logo-img{display:block;height:56px;width:56px}
+.brand{display:inline-flex;min-width:44px;min-height:44px}.logo-img{display:block;height:64px;width:64px}
 nav{display:flex;gap:18px}nav a{display:inline-block;padding:12px 6px;text-decoration:none;color:var(--muted);border-bottom:2px solid transparent}
 nav a:hover{color:var(--ink)}nav a[aria-current="page"]{color:var(--ink);border-bottom-color:var(--red)}
 .menu{display:none;position:relative}.menu summary{list-style:none;cursor:pointer;padding:12px 18px;border:1.5px solid var(--ink);border-radius:999px;font-weight:500}
@@ -25,7 +25,7 @@ nav a:hover{color:var(--ink)}nav a[aria-current="page"]{color:var(--ink);border-
 .btn.ghost:hover{background:var(--ink);color:#fff}.btn:active{transform:scale(.97)}
 .ribbon{display:block;width:100%;max-width:1040px;height:44px;margin:8px auto;padding:0 24px;overflow:visible}
 .ribbon path{fill:none;stroke:var(--red);stroke-width:5;stroke-linecap:round;vector-effect:non-scaling-stroke}
-section{padding:60px 0}h2{font-size:clamp(2.2rem,5vw,3.4rem);margin-bottom:14px}.lead{color:var(--muted);max-width:56ch;font-size:1.1rem}.lead.tag{font:400 2rem "Kaushan Script",cursive;color:var(--red-deep);margin:20px 0 0}
+section{padding:60px 0}section.wrap{padding:60px 24px}h2{font-size:clamp(2.2rem,5vw,3.4rem);margin-bottom:14px}.lead{color:var(--muted);max-width:56ch;font-size:1.1rem}.lead.tag{font:400 2rem "Kaushan Script",cursive;color:var(--red-deep);margin:20px 0 0}
 .features{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:28px;margin-top:34px}
 .feature{background:var(--surface);border:1px solid var(--line);border-radius:18px;overflow:hidden;transition:transform .2s var(--ease)}
 .ph{aspect-ratio:4/3;overflow:hidden;margin:0}.ph img,.arch img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .35s var(--ease)}
@@ -55,7 +55,6 @@ footer img{display:block;margin:0 auto 6px;height:96px;width:96px}
 @supports (animation-timeline:view()){
  .band-photo>img{animation:unveil linear both;animation-timeline:view();animation-range:entry 0% cover 40%}
  @keyframes unveil{from{clip-path:inset(10% 5% 10% 5%);transform:scale(1.06)}to{clip-path:inset(0);transform:none}}
- .ribbon path{stroke-dasharray:1;animation:draw linear both;animation-timeline:view();animation-range:entry 10% cover 45%}
- @keyframes draw{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}}
-@media (prefers-reduced-motion:reduce){[data-enter]{animation-name:fade;animation-delay:0s}.band-photo>img,.ribbon path{animation:none}.ph img,.arch img,.feature,.btn{transition:none}html{scroll-behavior:auto}}
+}
+@media (prefers-reduced-motion:reduce){[data-enter]{animation-name:fade;animation-delay:0s}.band-photo>img{animation:none}.ph img,.arch img,.feature,.btn{transition:none}html{scroll-behavior:auto}}
 @media (max-width:760px){nav{display:none}.menu{display:block}.hero{grid-template-columns:1fr;padding-top:12px}.mark{order:-1}.mark img{max-width:300px}body{padding-bottom:84px}.dock{display:flex}}
